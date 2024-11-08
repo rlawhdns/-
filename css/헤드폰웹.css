@@ -1,0 +1,914 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{color: #000; text-decoration: none;}
+
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+body{
+    font-family: 'pretendard';
+}
+
+
+/* 헤더 시작 */
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    position: absolute;
+    /*배너 100vh줬는데 헤더 때문에 스크롤 생기는거 방지하려고 헤더를 순서에서 빼준거임*/
+    z-index: 99;
+}
+
+.nemo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* 여기도 백프로 .nav-menu도 백프로여야 저스티파이 컨텐트가 먹음..왜? */
+    height: 80px;
+    padding: 0px 60px;
+}
+
+.logo img{
+    width: 180px;
+    height: 22px;
+}
+
+.menuBar {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nav-menu li {
+    padding: 8px 34px;
+}
+
+header a {
+    /* display: inline-block; */
+    color: #FFF;
+    padding: 4px 8px;
+}
+
+
+/* banner */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+}
+
+
+.mainSwiper .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainSwiper .swiper-slide:nth-of-type(1){
+    background: url(/img/배너\ 후보\ 사진\ 3.png)no-repeat center center;
+}
+
+
+.slideTxt li:nth-child(1){
+    position: absolute;
+    top: 54%;
+    left: 5.3%;
+}
+
+.slideTxt li:nth-child(2){
+    font-size: 68px;
+    font-weight: 600;
+    color: #fff; 
+    position: absolute;
+    top: 59%;
+    left: 5%;
+}
+
+.slideTxt li:nth-child(3){
+    font-size:34px;
+    font-weight: 300;
+    color: #FFF;
+    position: absolute;
+    top: 68%;
+    left: 5%;
+}
+
+.slideTxt li a{
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 15px 80px;
+    font-size: 22px;
+    font-weight: 300;
+    border: 1px solid #fff;
+}
+
+
+
+.slideTxt-btn{
+    position: absolute;
+    top: 78%;
+    left: 5%;
+}
+
+.product{
+    display: flex;
+}
+
+.product li{
+    width: 100%;
+    /* 이미지가 삐져나와서 위드값100프로준거 */
+    height: 463px;
+    position: relative;
+}
+
+.product li:nth-child(1){
+    background: url(/img/메뉴\ 남자.png)no-repeat center center;
+}
+
+.product li:nth-child(2){
+    background: url(/img/매뉴\ 이어폰.png)no-repeat center center;
+}
+
+.product li:nth-child(3){
+    background: url(/img/메뉴\ 스피커.png)no-repeat center center;
+}
+
+.product li:nth-child(4){
+    background: url(/img/메뉴\ 사운드바.png)no-repeat center center;
+}
+
+
+
+.productTxt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+.productTxt div{
+    color: #fff;
+    font-family: "Judson", serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.productTxt p{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 300;
+    /* 왜 폰트웨이트 안먹냐*/
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.productTxt a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    /* 왜 텍스트 얼라인 센터 안먹냐=a라 안먹는거임 디스플레이 블락해주니까 됨*/
+}
+
+.productTxt a img{
+    padding: 0px 0px 3px 8px;
+}
+
+.event{
+    width: 100%;
+    height: 1066px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.event a{
+    color: #fff;
+}
+
+.eventTxt{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+
+.eventTxt li:nth-child(1){
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+}
+
+.eventTxt li:nth-child(2){
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.eventTxt li:nth-child(3){
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.eventTxt img{
+    padding: 0px 0px 5px 8px;
+}
+
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width:100%;
+  overflow-x:hidden;
+}
+
+.myswiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mySwiper .swiper-wrapper{
+    margin-top: 460px;
+    /* position: absolute;
+    top: 45%; */
+    
+}
+
+.mySwiper .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+  }
+  
+.mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+.mySwiper .swiper-button-next {
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    font-size: 10px;
+    background: url(/img/화살표\ 찐찐막.png)no-repeat
+    rgba(0, 0, 0, 0.5) center 43%;
+    position: absolute;
+    top: 61%;
+
+    
+}
+
+.mySwiper .swiper-button-prev {
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    font-size: 10px;
+    background: url(/img/화살표\ 찐찐막\ 왼쪽.png)no-repeat
+    rgba(0, 0, 0, 0.5) center 43%;
+    position: absolute;
+    top: 61%;
+}
+
+.mySwiper .swiper-button-next:after {
+    font-size: 0rem !important;
+    font-weight: 600 !important;
+    background-color: #000000;
+}
+
+.mySwiper .swiper-button-prev:after {
+    font-size: 0rem !important;
+}
+
+/* .mySwiper .swiper-pagination{
+    --swiper-theme-color: #797373 !important;
+    --swiper-pagination-bullet-size: 10px;
+    margin-bottom: 230px;
+}
+
+.mySwiper .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+    background-color: #FFF;
+    opacity: 1;
+
+}
+
+.mySwiper .swiper-pagination-bullet:nth-child(1){
+    background-color: rgb(255, 255, 255);
+}
+.mySwiper .swiper-pagination-bullet:nth-child(2){
+    background-color: rgb(255, 255, 255);
+}
+.mySwiper .swiper-pagination-bullet:nth-child(3){
+    background-color: rgb(255, 255, 255);
+} */
+
+/* 페이지네이션 */
+
+.mySwiper .swiper-pagination{
+    margin-bottom: 150px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+/* 페이지네이션 끝*/
+
+
+.BoseQCultra{
+    width: 100%;
+    height: 1107px;
+    background-image: linear-gradient(black,#2E3C60,black);
+    position: relative;
+}
+
+.BoseQCultra ul{
+    font-size: 15px;
+}
+
+.BoseQCultra li:nth-child(1){
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
+
+.BoseQCultra li:nth-child(2) img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.BoseQCultra li:nth-child(3){
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.BoseQCultra li:nth-child(4){
+    position: absolute;
+    top: 82%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: all 0.7s;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.BoseQCultra li:nth-child(5){
+    position: absolute;
+    top: 82%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    border: 1px solid #fff;
+    transition: all 0.6s;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.BoseQCultra li:nth-child(4):hover{
+    background-color: #000;
+}
+.BoseQCultra li:nth-child(5):hover{
+    background-color: #000;
+}
+
+.BoseQCultra li a{
+    color: #fff;
+    display: block;
+}
+
+.BoseQCultra-btn{
+    padding: 16px 46px;
+}
+
+.BoseQCultra-btn2{
+    padding: 16px 52px;
+}
+
+.Noisecanceling{
+    width: 100%;
+    height: 1107px;
+    background-color: #000;
+    color: #fff;
+}
+
+.Noisecanceling a{
+    color: #fff;
+}
+
+.Noisecanceling-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    /* 조금 더 띄우고싶은데 ............. */
+}
+
+.Noisecanceling-box li:nth-child(1){
+    width: 49.2188vw;
+    /* 이게 문제가 안될까..? */
+    height: 819px;
+    background: url(/img/마지막\ 이어폰.png.png)no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.Noisecanceling-box li:nth-child(2){
+    width: 49.2188vw;
+    /* 이게 문제가 안될까..? */
+    height: 819px;
+    background: url(/img/마지막\ 헤드폰.png)no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.Noisecanceling-box li P:nth-child(1){
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Noisecanceling-box li P:nth-child(2){
+    position: absolute;
+    bottom: 16%;
+    left: 5%;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.Noisecanceling-box li p:nth-child(3){
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Noisecanceling-box li p:nth-child(3) img{
+    padding: 0px 0px 5px 8px;
+}
+
+footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer a{
+    color: #fff;
+}
+
+/* .footer-box>ul{
+    display: flex;
+} */
+/* ?왜다되는겨 */
+
+.footer-box{
+    width: 1200px;
+    height: 231px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.footer-box-private{
+    display: flex;
+    justify-content: end;
+}
+
+.footer-box-private li{
+    margin-right: 25px;
+}
+
+.footer-box-private li:nth-child(3){
+    margin-right:0;
+}
+
+.logo-img img{
+    width: 157px;
+}
+
+.footer-box-text{
+    display: flex;
+    margin-top: 14px;
+}
+
+.footer-box-text2{
+    display: flex;
+    margin-top: 14px;
+}
+
+.footer-box-text3{
+    display: flex;
+    margin-top: 14px;
+}
+
+
+.all{
+    width: 1200px;
+    position: absolute;
+    top: 30%;
+}
+
+.footer-box-text3 span{
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+span i:nth-of-type(1){
+    margin-right: 13px;
+    /* 맨 오른쪽 마진 안주는법 */
+}
+
+
+@media screen and (max-width:480px) {
+    header{
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        /* 로고 밑으로 메뉴 내려오게 하려고 컬럼해준거 */
+    }
+
+    .nemo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 0px 20px;
+    }
+
+
+    .logo img{
+        width: 120px;
+        height: 15px;
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        /* block이 아니라 flex인 이유 */
+    }
+
+    header a {
+        display: inline-block;
+    }
+
+    .menuBar {
+        position:absolute;
+        right: 20px;
+        display: block;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    
+    .mainSwiper .swiper-slide:nth-of-type(1){
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: -350px
+        50px;
+    }
+    /* .mainSwiper .swiper-slide:nth-of-type(2){
+        width: 100%;
+        height: 531px;
+        background-size: cover;
+        }
+        .mainSwiper .swiper-slide:nth-of-type(3){
+            width: 100%;
+            height: 531px;
+            background-size: cover;
+            } */
+            
+    .slideTxt{
+        width: 100%;
+    }
+            
+    .slideTxt li:nth-child(1){
+        width: 279px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .slideTxt li:nth-child(2){
+        font-size: 34px;
+        color: #fff;
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 60%;
+
+    }
+    .slideTxt li:nth-child(3){
+        font-size: 20px;
+        color: #FFF;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    .slideTxt li a{
+        padding: 11px 53px;
+        font-size:16px;
+    }
+    .slideTxt-btn{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product li{
+        width: 100%;
+        overflow: hidden;
+    }
+    /* product의 li에다가 다 100% 줘야함 꼭~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .event{
+        position: relative;
+    }
+
+    .eventTxt{
+        position: absolute;
+        top: 13%;
+        left: 7%;
+    }
+
+    .eventTxt li:nth-child(1){
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .eventTxt li:nth-child(2){
+        font-size: 22px;
+        margin-top: 20px;
+        line-height: 32px;
+    }
+    .eventTxt li:nth-child(3){
+        font-size: 22px;
+        font-weight: 600;
+        position: absolute;
+        top: 100%;
+        /* 이게 맞나..? */
+    }
+
+    .mySwiper .swiper-wrapper{
+        margin-top: 420px;
+    }
+
+    .mySwiper .swiper-slide{
+        width: 400px;
+        height: 300px;
+    }
+
+    .mySwiper .swiper-button-next{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 53%;
+        background: url(/img/화살표\ 흰색\ 26곱하기10.png)no-repeat
+        rgba(0, 0, 0, 0.5) center 43%;
+
+        
+    }
+
+    .mySwiper .swiper-button-prev{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 53%;
+        background: url(/img/화살표\ 흰색\ 26\ 곱하기\ 10\ 왼쪽.png)no-repeat
+        rgba(0, 0, 0, 0.5) center 43%;
+    }
+
+    .mySwiper .swiper-pagination{
+        margin-bottom: 270px;
+    }
+
+    .BoseQCultra li:nth-of-type(1){
+        width: 223px;
+        /*.BoseQCultra img:nth-of-type(1)는 안되는 이유 img는 순서가 없고 외동아들이니까*/
+        
+        top: 32%;
+    }
+
+    .BoseQCultra img {
+        width: 100%;
+    }
+    /* 이미지는 뚫고 나가는 성질이 있어서 100% 해준거 */
+    .BoseQCultra li:nth-of-type(2){
+        width: 470px;
+    }
+    
+    .BoseQCultra li:nth-of-type(3){
+        width: 322px;
+    }
+
+    .BoseQCultra li:nth-of-type(4){
+        top: 80%;
+        left: 35%;
+        font-size: 0.8666em;
+    }
+
+    .BoseQCultra li:nth-of-type(5){
+        top: 80%;
+        left: 67%;
+        background-color: #000;
+        font-size: 0.8666em;
+    }
+
+    .BoseQCultra-btn{
+        padding: 12px 32px;
+    }
+
+    .BoseQCultra-btn2{
+        padding: 12px 39px;
+    }
+
+    .Noisecanceling-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        /* 저스티파이콘텐트 취소하고 싶음 */
+    }
+
+    .Noisecanceling-box li:nth-child(1){
+        width: 100%;
+        height: 500px;
+    }
+
+    .Noisecanceling-box li:nth-child(2){
+        width: 100%;
+        height: 500px;
+    }
+
+    .Noisecanceling-box li P:nth-child(1){
+        font-size: 32px;
+        bottom: 30%;
+        left: 6%;
+    }
+
+    .Noisecanceling-box li P:nth-child(2){
+        font-size: 18px;
+        bottom: 20%;
+        left: 6%;
+    }
+
+    .Noisecanceling-box li P:nth-child(3){
+        font-size: 18px;
+        left: 6%;
+    }
+
+    footer{
+        width: 100%;
+        height: 340px;
+        position: relative;
+    }
+
+    footer img{
+        width: 140px;
+        position: absolute;
+        top: 20%;
+    }
+
+    .all{
+        position: absolute;
+        top: 78%;
+        left: 1%;
+    }
+
+    .footer-box-private{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 35%;
+        left: 1%;
+        font-size: 14px;
+    }
+
+    .footer-box-private li{
+        margin-top: 8px;
+    }
+
+    
+    .footer-box-text{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        /* position: absolute;
+        top: 10%; */
+    }
+
+    .footer-box-text li{
+        margin-top: 3px;
+    }
+
+    .footer-box-text2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .footer-box-text2 li{
+        margin-top: 3px;
+    }
+
+    .footer-box-text3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .footer-box-text3 li{
+        margin-top: 3px;
+    }
+
+    .footer-box-text3 span{
+        position: absolute;
+        top: 120%;
+        /* 120을..써두되나..? */
+        /* right: 90%; */
+        left: 0;
+    }
+
+
+}
